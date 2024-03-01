@@ -1,0 +1,1350 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+  color: #1d1442;
+}
+p,
+span {
+  color: #777;
+}
+img {
+  width: 100%;
+}
+/* ======= container ======= */
+.container {
+  width: 95%;
+  margin: 0% auto;
+  align-items: center;
+}
+html,
+body {
+  margin: 0%;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+/* ====== Nav Bar ======= */
+.nav-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 5px 20px;
+  background-color: #f1f1f1;
+}
+.nav-bar .logo,
+.search-bar,
+.right {
+  flex: 1;
+}
+/* ====== Nav Bar Logo ===== */
+.nav-bar .logo {
+  display: block;
+  text-align: left;
+  justify-content: left;
+}
+.nav-bar .logo h2 {
+  font-size: 2rem;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+.nav-bar .logo h2 span {
+  color: #be11a4;
+}
+.nav-bar .logo p span {
+  padding-right: 3px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+/* ===== Nav Bar Search bar ===== */
+.nav-bar .search-bar {
+  background-color: #fff;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.nav-bar .search-bar input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #333;
+  background-color: transparent;
+}
+.nav-bar .search-bar i {
+  font-size: 20px;
+  color: #777;
+}
+/* ====== Nav Bar Right ====== */
+.nav-bar .right {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: right;
+}
+.nav-bar .right li {
+  list-style-type: none;
+}
+.nav-bar .right li a {
+  text-decoration: none;
+  font-size: 15px;
+}
+.nav-bar .right li a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  display: block;
+  margin: 1px auto 0px;
+  background-color: #1d1442;
+  border-radius: 5px;
+}
+.nav-bar .right li a:hover::after,
+.right li a:hover {
+  width: 100%;
+  transition: 0.5s;
+  color: #be11a4;
+}
+
+/* ======= Second Nav ======= */
+.second-nav {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  background-color: #1d1442;
+  color: #f1f1f1;
+  padding: 20px;
+}
+.second-nav li {
+  list-style-type: none;
+}
+.second-nav li a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+.second-nav li a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  display: block;
+  margin: 1px auto 0px;
+  background-color: #ff5461;
+  border-radius: 5px;
+}
+.second-nav li a:hover::after,
+.second-nav li a:hover {
+  width: 100%;
+  color: #ff5461;
+  transition: 0.5s;
+}
+/* ======= Slider ======== */
+header .slider {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 60px auto 30px;
+}
+/* ====== Header Left ======= */
+header .slider .header-1 {
+  width: 70%;
+  overflow: hidden;
+  position: relative;
+}
+header .slider .header-1 img {
+  width: 100%;
+}
+/* ====== Left Header Text ====== */
+header .slider .header-1 .text {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  transform: translateY(-60%);
+  background-color: #ffff;
+  border-radius: 1rem;
+  padding: 30px;
+  text-align: left;
+}
+header .slider .header-1:hover .text {
+  top: 70%;
+  left: 7%;
+  transform: translateY(-70%);
+  transition: 0.5s;
+}
+header .slider .header-1 .text:hover {
+  box-shadow: 0px 5px 10px 0px;
+  transition: 0.5s;
+}
+header .slider .header-1 .text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 10px 0px;
+}
+header .slider .header-1 .text p {
+  padding: 10px 0px 40px;
+  font-size: 16px;
+}
+header .slider .header-1 .text p i {
+  font-size: 16px;
+  color: #ff5462;
+}
+header .slider .header-1 .text a {
+  padding: 10px 25px;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: #ff5461;
+  border: 1px solid #ff5461;
+  color: #fff;
+  font-size: 15px;
+}
+header .slider .header-1 .text a:hover {
+  background-color: transparent;
+  border-radius: 1px solid #ff5461;
+  transition: 0.5s;
+  color: #333;
+}
+header .slider .header-1 img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+header .slider .header-1 .text-2 {
+  display: block;
+  text-align: left;
+  position: absolute;
+  right: -100%;
+  bottom: 10%;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+  opacity: 0;
+}
+header .slider .header-1:hover .text-2 {
+  right: 10%;
+  bottom: 10%;
+  opacity: 1;
+  transition: 1s;
+}
+header .slider .header-1 .text-2 i {
+  font-size: 40px;
+  color: #777;
+  padding-left: 10px;
+}
+header .slider .header-1 .text-2 i:hover {
+  color: #ff5461;
+}
+header .slider .header-1 .text-2 p {
+  font-size: 12px;
+  font-weight: 600;
+}
+/* ======== Header Right ======== */
+header .slider .header-2 {
+  width: 30%;
+  overflow: hidden;
+  position: relative;
+}
+header .slider .header-2 .text {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  transform: translateY(-60%);
+  background-color: #ffff;
+  border-radius: 1rem;
+  padding: 30px;
+  text-align: left;
+}
+header .slider .header-2 .text a {
+  padding: 10px 25px;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: #ff5461;
+  border: 1px solid #ff5461;
+  color: #fff;
+  font-size: 15px;
+  margin-top: 30px;
+  display: inline-block;
+}
+header .slider .header-2 img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+header .slider .header-2 img {
+  width: 100%;
+}
+header .slider .header-2 .text a:hover {
+  background-color: transparent;
+  border-radius: 1px solid #ff5461;
+  transition: 0.5s;
+  color: #333;
+}
+header .slider .header-2:hover .text {
+  top: 70%;
+  left: 7%;
+  transform: translateY(-70%);
+  transition: 0.5s;
+}
+/* ======= Section 1 ======= */
+.section-1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 50px auto 80px;
+  padding: 50px 0px;
+  border-bottom: 1px solid #ccc;
+}
+.section-1 .text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.section-1 .text i {
+  color: #ff5461;
+  font-size: 30px;
+  padding-right: 20px;
+}
+.section-1 .text .inside {
+  display: block;
+  align-items: center;
+}
+.section-1 .text .inside h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.section-1 .text .inside p {
+  font-size: 10px;
+}
+/* ======= All ======== */
+.alls {
+  width: 100%;
+  text-align: center;
+  margin: 20px auto 50px;
+}
+
+.alls h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.alls p {
+    text-transform: capitalize;
+  font-size: 14px;
+}
+/* ======= Section 2 ====== */
+.section-2{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 30px auto 50px;
+    padding: 50px 40px;
+ border: 1px solid #ccc;
+}
+.section-2 .box{
+    flex: 1;
+    border: 1px solid #ccc;
+   border-top: none;
+   overflow: hidden;
+   position: relative;
+   border-radius: 5px;
+}
+.section-2 .box .icons{
+    display: block;
+    align-items: center;
+   padding: 15px 10px;
+    background-color: #1d1442;
+    border-radius: 5px;
+    position: absolute;
+    top: -62%;
+    right: -92%;
+    opacity: 0;
+}
+.section-2 .box:hover .icons{
+    top: 2%;
+    right: 2%;
+    opacity: 1;
+    transition: 0.5s;
+}
+.section-2 .box .icons i{
+    display: block;
+    padding-bottom: 15px;
+    color: #ccc;
+    font-size: 16px;
+}
+.section-2 .box .icons i:hover{
+    color: #330bd3;
+    transition: 0.5s;
+}
+.section-2 .box img{
+    width: 100%;
+}
+.section-2 .box .text{
+   padding: 50px 10px 20px;
+   text-align: left;
+}
+.section-2 .box .text p{
+    font-size: 13px;
+    font-weight: 500;
+    color: #777;
+}
+.section-2 .box .text h3{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.section-2 .box .text .stars i{
+    color: #ff5461;
+    font-size: 13px;
+}
+/* ======= Section 3 ======== */
+.section-3{
+  width: 100%;
+  display: block;
+  margin: auto;
+  gap: 4rem;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 50px 40px;
+}
+.section-3 .box-1{
+  display: flex;
+  height: fit-content;
+  margin: 10px auto 70px;
+  gap: 3rem;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  
+}
+.section-3 .box-1 .imgs{
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.section-3 .box-1 .imgs .insides{
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  transform: translateY(-40%);
+  opacity: 0;
+}
+.section-3 .box-1:hover .imgs .insides{
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translateY(-40%);
+  opacity: 1;
+  transition: 1s;
+}
+.section-3 .box-1 .imgs .insides p{
+  color: #fff;
+  font-size: 13px;
+}
+.section-3 .box-1 .imgs .insides h4{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+.section-3 .box-1 .imgs .insides a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  display: inline-block;
+  background-color: #ff5461;
+  padding: 13px 30px;
+  border-radius: 2px;
+  border: 2px solid #ff5461;
+  margin-top: 20px;
+}
+.section-3 .box-1 .imgs .insides a:hover{
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #ff5461;
+  transition: 0.5s;
+}
+.section-3 .box-1 .imgs img{
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+.section-3 .box-1 img:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+  overflow: hidden;
+}
+.section-3 .box-1 .imgs,.text{
+  flex: 1;
+}
+.section-3 .box-1 .text{
+  padding: 0px 20px;
+}
+
+.section-3 .box-1 .text p{
+  font-size: 14px;
+  color: #777;
+  padding: 10px 0px;
+}
+.section-3 .box-1 .text p span{
+  color: #999;
+  padding-right: 20px;
+  font-weight: 600;
+}
+.section-3 .box-1 .text h3{
+  color: #777;
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+/* ======== Section 4 ========= */
+.section-4{
+  width: 100%;
+  height: 70vh;
+  background-image: radial-gradient(rgba(0,0,225,0.7),rgba(0,0,225,0.7)),url(images/header\ 2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 1rem;
+  margin: 50px 0px;
+}
+.section-4 .text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.section-4 .text h1{
+  font-size: 55px;
+  font-weight: 700;
+  color: #fff;
+}
+.section-4 .text p{
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 0px;
+}
+.section-4 .text a{
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 12px 64px;
+  background-color: #ff5461;
+  border: 2px solid #ff5461;
+  margin: 30px 0px;
+
+}
+.section-4 .text a:hover{
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #ff5461;
+  transition: 1s;
+}
+/* ====== footer ======= */
+.footer {
+  width: 100%;
+  align-items: center;
+  background-color: #1d1442;
+  background-position: center;
+  background-size: cover;
+  margin: 50px auto 0px;
+  padding: 20px;
+}
+/* ==== Footer Upper ==== */
+.footer .upper {
+  display: flex;
+  width: 95%;
+  margin: 30px auto 30px;
+  padding: 30px 0px;
+  border-bottom: 1px solid #555;
+}
+/* ======= footer Upper Text ======= */
+.footer .upper .text {
+  flex: 1;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+.footer .upper .text span {
+  color: #b8c6e9;
+  font-size: 35px;
+  padding-right: 30px;
+}
+.footer .upper .text p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+/* ===== Footer Navlinks ===== */
+.footer .nav-links {
+  display: flex;
+  width: 95%;
+  margin: 50px 30px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #555;
+}
+.footer .nav-links .lower {
+  flex: 1;
+}
+.footer .nav-links .lower p {
+  font-size: 19px;
+  font-weight: 600;
+  color: #cccc;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.footer .nav-links .lower li {
+  display: block;
+  list-style: none;
+}
+.footer .nav-links .lower a {
+  text-decoration: none;
+  display: inline-block;
+  color: #f1f1f1;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+.footer .nav-links .lower a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: #114fed;
+  border-radius: 5px;
+  margin-top: 5px;
+  display: block;
+}
+.footer .nav-links .lower a:hover::after {
+  color: #114fed;
+  width: 100%;
+  transition: 0.5s;
+}
+.footer .nav-links .lower a:hover {
+  color: #114fed;
+}
+/* ====== Search Bar Right ====== */
+.footer .nav-links .right {
+  flex: 1;
+  text-align: left;
+}
+.footer .nav-links .right p {
+  color: #cccc;
+  font-size: 19px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.footer .nav-links .right h4 {
+  color: #ffff;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 15px 0px;
+}
+.footer .nsv-links .right .inputs {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+}
+.footer .nav-links .right .inputs input {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  width: 60%;
+  border-radius: 20px;
+}
+::placeholder {
+  font-size: 12px;
+}
+.footer .nav-links .right .inputs button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background-color: #114fed;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+/* ===== Footer Icons ===== */
+.footer .nav-links .right .icons i {
+  color: #555;
+  font-size: 17px;
+  padding-right: 10px;
+}
+.footer .nav-links .right .icons i:hover {
+  color: #114fed;
+  transition: 0.5s;
+}
+.copy-right {
+  text-align: center;
+  margin: auto;
+}
+.copy-right p {
+  font-size: 17px;
+  color: #ccc;
+ }
+ .nav-bar .right .menu{
+  opacity: 0;
+ }
+/* ========= Media Query Under 1168px ========= */
+@media screen and (max-width:1168px){
+  html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  overflow-x: hidden;
+  }
+  .nav-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+  }
+  .nav-bar .logo,
+  .search-bar,
+  .right {
+    flex: 1;
+  }
+  /* ====== Nav Bar Logo ===== */
+  .nav-bar .logo {
+    display: block;
+    text-align: left;
+    justify-content: left;
+  }
+  .nav-bar .logo h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .nav-bar .logo h2 span {
+    color: #be11a4;
+  }
+  .nav-bar .logo p span {
+    padding-right: 1px;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+  /* ===== Nav Bar Search bar ===== */
+  .nav-bar .search-bar {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+  }
+  
+  .nav-bar .search-bar input {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #333;
+    background-color: transparent;
+  }
+  .nav-bar .search-bar i {
+    font-size: 20px;
+    color: #777;
+  }
+  /* ====== Nav Bar Right ====== */
+  .nav-bar .right {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: right;
+    padding-left: 35px;
+  }
+  .nav-bar .right li {
+    list-style-type: none;
+  }
+  .nav-bar .right li a {
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .nav-bar .right li a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    display: block;
+    margin: 1px auto 0px;
+    background-color: #1d1442;
+    border-radius: 5px;
+  }
+  .nav-bar .right li a:hover::after,
+  .right li a:hover {
+    width: 100%;
+    transition: 0.5s;
+    color: #be11a4;
+  }
+  /* ======= Slider ======== */
+header .slider {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 60px auto 30px;
+}
+/* ====== Header Left ======= */
+header .slider .header-1 {
+  width: 70%;
+  overflow: hidden;
+  position: relative;
+}
+header .slider .header-1 img {
+  width: 100%;
+}
+/* ====== Left Header Text ====== */
+header .slider .header-1 .text {
+  position: absolute;
+  top: 60%;
+  left: 3%;
+  transform: translateY(-60%);
+  background-color: #ffff;
+  border-radius: 1rem;
+  padding: 20px;
+  text-align: left;
+}
+header .slider .header-1:hover .text {
+  top: 70%;
+  left: 2%;
+  transform: translateY(-70%);
+  transition: 0.5s;
+ 
+}
+header .slider .header-1 .text:hover {
+  box-shadow: 0px 5px 10px 0px;
+  transition: 0.5s;
+}
+header .slider .header-1 .text h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 10px 0px;
+}
+header .slider .header-1 .text p {
+  padding: 10px 0px 40px;
+  font-size: 14px;
+}
+header .slider .header-1 .text p i {
+  font-size: 14px;
+  color: #ff5462;
+}
+header .slider .header-1 .text a {
+  padding: 10px 25px;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: #ff5461;
+  border: 1px solid #ff5461;
+  color: #fff;
+  font-size: 13px;
+  margin: 10px 0px;
+  display: inline-block;
+}
+header .slider .header-1 .text a:hover {
+  background-color: transparent;
+  border-radius: 1px solid #ff5461;
+  transition: 0.5s;
+  color: #333;
+}
+header .slider .header-1 img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+header .slider .header-1 .text-2 {
+  display: block;
+  text-align: left;
+  position: absolute;
+  right: -100%;
+  bottom: 10%;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 0.5rem;
+  opacity: 0;
+}
+header .slider .header-1:hover .text-2 {
+  right: 1%;
+  bottom: 10%;
+  opacity: 1;
+  transition: 1s;
+}
+header .slider .header-1 .text-2 i {
+  font-size: 30px;
+  color: #777;
+  padding-left: 10px;
+}
+header .slider .header-1 .text-2 i:hover {
+  color: #ff5461;
+}
+header .slider .header-1 .text-2 p {
+  font-size: 14px;
+  font-weight: 600;
+}
+/* ======== Header Right ======== */
+header .slider .header-2 {
+  width: 30%;
+  overflow: hidden;
+  position: relative;
+}
+header .slider .header-2 .text {
+  position: absolute;
+  top: 60%;
+  left: 4%;
+  transform: translateY(-60%);
+  background-color: #ffff;
+  border-radius: 1rem;
+  padding: 15px;
+  text-align: left;
+}
+header .slider .header-2 .text h2{
+  font-size: 1.1rem;
+}
+header .slider .header-2 .text a {
+  padding: 5px 15px;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: #ff5461;
+  border: 1px solid #ff5461;
+  color: #fff;
+  font-size: 15px;
+  margin-top: 30px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+header .slider .header-2 img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+header .slider .header-2 img {
+  width: 100%;
+}
+header .slider .header-2 .text a:hover {
+  background-color: transparent;
+  border-radius: 1px solid #ff5461;
+  transition: 0.5s;
+  color: #333;
+}
+header .slider .header-2:hover .text {
+  top: 70%;
+  left: 7%;
+  transform: translateY(-70%);
+  transition: 0.5s;
+}
+.section-1 {
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  text-align: center;
+  margin: 50px auto 80px;
+  padding: 50px 0px;
+  border-bottom: 1px solid #ccc;
+}
+.section-1 .text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.section-1 .text i {
+  color: #ff5461;
+  font-size: 30px;
+  padding-right: 20px;
+}
+.section-1 .text .inside {
+  display: block;
+  align-items: center;
+}
+.section-1 .text .inside h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+.section-1 .text .inside p {
+  font-size: 10px;
+}
+.alls h2{
+  font-size: 25px;
+}
+.section-2{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.section-2 .box{
+  height: 50vh;
+}
+.section-4 .text h1{
+  font-size: 2rem;
+}
+.section-4 .text p{
+  font-size: 13px;
+}
+.footer .upper .text p{
+  font-size: 10px;
+}
+.footer .upper .text span{
+  padding-right: 8px;
+}
+
+}
+/* ======= Media Query Under 780px ======= */
+@media screen and (max-width:780px){
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    overflow-x: hidden;
+    }
+
+    .nav-bar {
+      width: 100%;
+      display: flex;
+      margin: auto;
+      align-items: center;
+      text-align: center;
+     justify-content: space-between;
+      padding: 5px 10px;
+      background-color: #f1f1f1;
+     
+   
+    }
+  
+    /* ====== Nav Bar Logo ===== */
+    .nav-bar .logo {
+      width: 20%;
+      display: block;
+      text-align: left;
+      justify-content: space-evenly;
+      margin: auto;
+    }
+    .nav-bar .logo h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .nav-bar .logo h2 span {
+      color: #be11a4;
+    }
+    .nav-bar .logo p span {
+      padding-right: 1px;
+      font-size: 8px;
+      text-transform: uppercase;
+    }
+    /* ===== Nav Bar Search bar ===== */
+    .nav-bar .search-bar {
+      width: 40%;
+      margin: auto;
+      background-color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.5rem;
+    }
+    
+    .nav-bar .search-bar input {
+      width: 100%;
+      border: none;
+      outline: none;
+      color: #333;
+      background-color: transparent;
+    }
+    .nav-bar .search-bar i {
+      font-size: 20px;
+      color: #777;
+    }
+    /* ====== Nav Bar Right ====== */
+    .nav-bar .right {
+     opacity: 0;
+      gap: 1.5rem;
+      align-items: center;
+      justify-content: right;
+      padding-left: 35px;
+    }
+    .nav-bar .right li {
+      list-style-type: none;
+    }
+    .nav-bar .right li a {
+      text-decoration: none;
+      font-size: 15px;
+    }
+    .nav-bar .right li a::after {
+      content: "";
+      width: 0%;
+      height: 3px;
+      display: block;
+      margin: 1px auto 0px;
+      background-color: #1d1442;
+      border-radius: 5px;
+    }
+    .nav-bar .right li a:hover::after,
+    .right li a:hover {
+      width: 100%;
+      transition: 0.5s;
+      color: #be11a4;
+    }
+    .nav-bar .menu{
+     width: 20%;
+     margin: auto;
+    }
+    
+    /* ======= Slider ======== */
+  header .slider {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin: 60px auto 30px;
+  }
+  /* ====== Header Left ======= */
+  header .slider .header-1 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  header .slider .header-1 img {
+    width: 100%;
+  }
+  /* ====== Left Header Text ====== */
+  header .slider .header-1 .text {
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    transform: translateY(-40%);
+    background-color: #ffff;
+    border-radius: 1rem;
+    padding: 15px;
+    text-align: left;
+  }
+  header .slider .header-1:hover .text {
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    transition: 0.5s;
+  }
+  header .slider .header-1 .text:hover {
+    box-shadow: 0px 5px 10px 0px;
+    transition: 0.5s;
+  }
+  header .slider .header-1 .text h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 5px 0px;
+  }
+  header .slider .header-1 .text p {
+    padding: 5px 0px 30px;
+    font-size: 10px;
+  }
+  header .slider .header-1 .text p i {
+    font-size: 14px;
+    color: #ff5462;
+  }
+  header .slider .header-1 .text a {
+    padding: 7px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #ff5461;
+    border: 1px solid #ff5461;
+    color: #fff;
+    font-size: 13px;
+    margin: 10px 0px;
+    display: inline-block;
+  }
+  header .slider .header-1 .text a:hover {
+    background-color: transparent;
+    border-radius: 1px solid #ff5461;
+    transition: 0.5s;
+    color: #333;
+  }
+  header .slider .header-1 img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  header .slider .header-1 .text-2 {
+    display: block;
+    text-align: left;
+    position: absolute;
+    right: -100%;
+    bottom: 10%;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 0.5rem;
+    opacity: 0;
+  }
+  header .slider .header-1:hover .text-2 {
+    right: 1%;
+    bottom: 10%;
+    opacity: 1;
+    transition: 1s;
+  }
+  header .slider .header-1 .text-2 i {
+    font-size: 30px;
+    color: #777;
+    padding-left: 10px;
+  }
+  header .slider .header-1 .text-2 i:hover {
+    color: #ff5461;
+  }
+  header .slider .header-1 .text-2 p {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  /* ======== Header Right ======== */
+  header .slider .header-2 {
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+  }
+  header .slider .header-2 .text {
+    position: absolute;
+    top: 60%;
+    left: 4%;
+    transform: translateY(-60%);
+    background-color: #ffff;
+    border-radius: 1rem;
+    padding: 15px;
+    text-align: left;
+  }
+  header .slider .header-2 .text h2{
+    font-size: 1.1rem;
+  }
+  header .slider .header-2 .text a {
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #ff5461;
+    border: 1px solid #ff5461;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 30px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  header .slider .header-2 img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  header .slider .header-2 img {
+    width: 100%;
+  }
+  header .slider .header-2 .text a:hover {
+    background-color: transparent;
+    border-radius: 1px solid #ff5461;
+    transition: 0.5s;
+    color: #333;
+  }
+  header .slider .header-2:hover .text {
+    top: 70%;
+    left: 7%;
+    transform: translateY(-70%);
+    transition: 0.5s;
+  }
+  .section-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    align-items: center;
+    text-align: center;
+    margin: 50px auto 80px;
+    padding: 50px 0px;
+    border-bottom: 1px solid #ccc;
+  }
+  .section-1 .text {
+    flex: 1;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    
+  }
+  .section-1 .text i {
+    color: #ff5461;
+    font-size: 30px;
+  }
+  .section-1 .text .inside {
+    display: block;
+    align-items: center;
+  }
+  .section-1 .text .inside h3 {
+    font-size:9px;
+    font-weight: 600;
+  }
+  .section-1 .text .inside p {
+    font-size: 10px;
+  }
+  .alls h2{
+    font-size: 25px;
+  }
+  .section-2{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 4rem;
+  }
+  .section-2 .box{
+    height: fit-content;
+  }
+  .section-3 .box-1{
+    flex-direction: column;
+  }
+  .section-3 .box-1 .insides p{
+font-size: 10px;
+  }
+  .section-3 .box-1 .insides h3{
+    font-size: 15px;
+  }
+  .section-3 .box-1 .text p{
+    font-size: 11px;
+  }
+  .section-4 .text h1{
+    font-size: 1rem;
+  }
+  .section-4 .text p{
+    font-size: 11px;
+  }
+  .section-4 .text a{
+    font-size: 12px;
+    padding: 10px 30px;
+  }
+  .footer .upper {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 3rem;
+  }
+  .footer .upper .text{
+    width: 50%;
+  }
+  .footer .upper .text p{
+    font-size: 16px;
+  }
+  .footer .nav-links{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .footer .upper .text p{
+    font-size: 10px;
+  }
+  .footer .upper .text span{
+    padding-right: 8px;
+  }
+ .copy-right p{
+  font-size: 10px;
+ } 
+}
